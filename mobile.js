@@ -83,6 +83,15 @@ class Paper {
 
 const papers = Array.from(document.querySelectorAll('.paper'));
 
+window.addEventListener('click', () => {
+    document.getElementById("song").play();
+});
+
+window.addEventListener('click', () => {
+  document.getElementById("video-container").play();
+});
+
+
 papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
